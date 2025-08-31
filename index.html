@@ -1,47 +1,101 @@
-<section id="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li><strong>Motor Insurance (Policy Bazaar)</strong><br />Comprehensive vehicle protection and hassle-free claim support.</li>
-        <li><strong>Health Insurance (Care Health)</strong><br />Extensive health coverage for individuals and families.</li>
-        <li><strong>Life Insurance (Bajaj Allianz)</strong><br />Secure your future and loved ones with flexible life insurance plans.</li>
-        <li><strong>Other Insurance Solutions</strong><br />All insurance products available through Policy Bazaar.</li>
-    </ul>
-</section>
-
-<section id="why-choose-us">
-    <h2>Why Choose Us?</h2>
-    <ul>
-        <li>Personalized insurance advice for every customer</li>
-        <li>Quick online quotes and easy process</li>
-        <li>Trusted partners and strong industry code</li>
-        <li>Reliable customer service</li>
-    </ul>
-</section>
-
-<section id="contact" class="contact-info">
-    <h2>Contact Us</h2>
-    <p><strong>Entrepreneur:</strong> Vasishta</p>
-    <p><strong>Mobile:</strong> <a href="tel:+919902449414">9902449414</a></p>
-    <p><strong>Email:</strong> <a href="mailto:vasishtaenterprisesbkl@gmail.com">vasishtaenterprisesbkl@gmail.com</a></p>
-</section>
-
-<section id="quote" class="quote-form">
-    <h2>Get a Quote / Enquire</h2>
-    <p>Fill out our contact form or call for personalized insurance solutions tailored to your needs.</p>
-    <form id="contactForm" onsubmit="return submitForm(event);">
-        <label for="name">Full Name *</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mobile">Mobile Number *</label>
-        <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" title="Enter 10 digit mobile number" required>
-
-        <label for="message">Message / Requirements</label>
-        <textarea id="message" name="message" placeholder="Explain your insurance needs or questions here..."></textarea>
-
-        <button type="submit">Submit</button>
-    </form>
-    <p id="formMessage" style="color: green; display: none; margin-top: 10px;">Thank you for your enquiry. We will get back to you soon.</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vasishta Enterprises - Insurance Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .navbar {
+            background: #00457c;
+        }
+        .navbar-brand, .nav-link, .footer {
+            color: #fff !important;
+        }
+        .card {
+            box-shadow: 0 2px 8px rgba(0,0,0,.08);
+        }
+        .footer {
+            background: #00457c;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vasishta Enterprises</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h1>Welcome to Vasishta Enterprises</h1>
+            <p>Your trusted insurance partner for Motor, Health, and Life Insurance solutions.</p>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Motor Insurance</h5>
+                    <p>Comprehensive vehicle protection and hassle-free claim support (Policy Bazaar).</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Health Insurance</h5>
+                    <p>Extensive health coverage for individuals and families (Care Health).</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Life Insurance</h5>
+                    <p>Secure your future and loved ones with flexible plans (Bajaj Allianz).</p>
+                </div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>Personalized insurance advice for every customer</li>
+                <li>Quick online quotes and easy process</li>
+                <li>Trusted partners and strong industry code</li>
+                <li>Reliable customer service</li>
+            </ul>
+        </div>
+        <div class="mb-4">
+            <h3>Contact Us</h3>
+            <p><strong>Entrepreneur:</strong> Vasishta<br>
+               <strong>Mobile:</strong> <a href="tel:+919902449414">9902449414</a><br>
+               <strong>Email:</strong> <a href="mailto:vasishtaenterprisesbkl@gmail.com">vasishtaenterprisesbkl@gmail.com</a>
+            </p>
+        </div>
+        <div class="mb-5">
+            <h3>Get a Quote / Enquire</h3>
+            <form>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Full Name *" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address *" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Mobile Number *" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Message / Requirements" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Vasishta Enterprises. All rights reserved.
+    </div>
+</body>
+</html>
